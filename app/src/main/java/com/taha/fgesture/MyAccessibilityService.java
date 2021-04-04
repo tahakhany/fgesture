@@ -28,7 +28,7 @@ public class MyAccessibilityService extends AccessibilityService {
     public void onCreate() {
         Log.d(TAG, "onCreate: created");
         isCreated = true;
-        serviceInfo.packageNames = null;
+        /*serviceInfo.packageNames = null;
         this.setServiceInfo(serviceInfo);
         serviceInfo.flags = AccessibilityServiceInfo.CAPABILITY_CAN_REQUEST_FINGERPRINT_GESTURES;
         this.setServiceInfo(serviceInfo);
@@ -40,7 +40,7 @@ public class MyAccessibilityService extends AccessibilityService {
         this.setServiceInfo(serviceInfo);
         serviceInfo.feedbackType = AccessibilityServiceInfo.FEEDBACK_ALL_MASK;
         //serviceInfo.notificationTimeout=100;
-        this.setServiceInfo(serviceInfo);
+        this.setServiceInfo(serviceInfo);*/
     }
 
     @Override
@@ -55,7 +55,7 @@ public class MyAccessibilityService extends AccessibilityService {
     @Override
     protected void onServiceConnected() {
 
-        serviceInfo.packageNames = null;
+        /*serviceInfo.packageNames = null;
         this.setServiceInfo(serviceInfo);
         serviceInfo.flags = AccessibilityServiceInfo.CAPABILITY_CAN_REQUEST_FINGERPRINT_GESTURES;
         this.setServiceInfo(serviceInfo);
@@ -68,7 +68,7 @@ public class MyAccessibilityService extends AccessibilityService {
         serviceInfo.feedbackType = AccessibilityServiceInfo.FEEDBACK_ALL_MASK;
         //serviceInfo.notificationTimeout=100;
         this.setServiceInfo(serviceInfo);
-        //Log.d(TAG, "onCreate: connected");
+        //Log.d(TAG, "onCreate: connected");*/
 
         mGestureController = getFingerprintGestureController();
         if (mGestureController != null) {
